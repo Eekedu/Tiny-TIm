@@ -64,7 +64,6 @@ public class controller : MonoBehaviour {
     private bool CanIJump()
     {
         return (bGrounded && (body.velocity.y < 0.1f));
-        return true;
     }
 
     private float GetJumpImpulse()
@@ -148,7 +147,11 @@ public class controller : MonoBehaviour {
             size = (scale != scaleBig)? 0.1f: -0.1f;
             scaleToNormal = (scale == scaleBig);
         }
-        if (Input.GetKeyDown(KeyCode.G) && !isChangingSize) { isChangingSize = true; size = -0.1f; }
+        if (Input.GetKeyDown(KeyCode.G) && !isChangingSize) {
+            isChangingSize = true;
+            size = (scale != scaleSmall) ? -0.1f : 0.1f;
+            scaleToNormal = (scale == scaleSmall);
+        }
         if (isChangingSize)
         {
             scale = scale + size;
