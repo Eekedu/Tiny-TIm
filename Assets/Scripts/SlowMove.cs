@@ -14,6 +14,6 @@ public class SlowMove : MonoBehaviour {
         GameObject parent = GameObject.FindGameObjectWithTag("Player");
         Rigidbody2D rigidbody2D = parent.GetComponent<Rigidbody2D>();
         Debug.Log(rigidbody2D.position.x.ToString() + " is where I is");
-        self.transform.position = new Vector3(rigidbody2D.transform.position.x /1.2f, 9f, 10);
+        self.transform.position = new Vector3(rigidbody2D.transform.position.x /1.1f, 9f, 10);
 	}
 }
