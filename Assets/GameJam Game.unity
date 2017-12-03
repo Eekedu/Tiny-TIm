@@ -913,6 +913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9522490}
   - component: {fileID: 9522489}
+  - component: {fileID: 9522491}
   m_Layer: 0
   m_Name: ShrinkingDevice-platform-tiles_1
   m_TagString: Untagged
@@ -977,6 +978,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &9522491
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9522488}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &19652978
 GameObject:
   m_ObjectHideFlags: 0
@@ -28005,12 +28031,12 @@ Prefab:
     - target: {fileID: 224436727874377324, guid: 54be5928da5ccbb48b6a73aad8bb8cc2,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 82.03125
+      value: 179.375
       objectReference: {fileID: 0}
     - target: {fileID: 224436727874377324, guid: 54be5928da5ccbb48b6a73aad8bb8cc2,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 46.09375
+      value: 83.59375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54be5928da5ccbb48b6a73aad8bb8cc2, type: 2}
